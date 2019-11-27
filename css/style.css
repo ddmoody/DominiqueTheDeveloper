@@ -1,109 +1,51 @@
+/* Global Styles */
 
 body {
+  font-family: 'Roboto', sans-serif;
+  background: #e4e4e4;
+  position: relative;
   overflow-x: hidden;
-  font-family: 'Lato', sans-serif;
-  padding-top: 56px;
+  min-height: 100vh;
+  font-size: 16px;
+  line-height: 1.8em;
 }
 
-.offset:before {
-  display: block;
-  content: "";
-  height: 4rem;
-  margin-top: -4rem;
+.section {
+  margin: 50px auto;
 }
 
-.jumbotron {
-  margin-bottom: 0;
-  padding: 2rem 0 3.5rem;
-  border-radius: 0;
+.page-p {
+  margin: 25px auto;
 }
 
-.heading {
-  font-size: 2.5rem;
+/* Navbar Styles */
+/* .navbar-brand {
   font-weight: 700;
-  margin-bottom: 1.9rem;
-}
-
-.headingUnderline {
-  width: 3rem;
-  height: .2rem;
-  background-color: red;
-  margin: 0 auto 2rem;
-}
-
-.skillHeading {
-  margin: 1.9rem auto 1.9rem;
-  padding-top: .4rem;
-  padding-bottom: .4rem;
-  font-weight: 700;
-}
-
-/*--- Navigation Bar ---*/
-
-/* .navbar-transparent {
-  background-color: rgba(0, 0, 0, 0.6)!important;
-}
-*/
-
-.navbar-brand {
-  font-weight: 700;
-}
-
+} */
 .navbar-nav li {
-  font-weight: 700;
+  /* font-weight: 700; */
   padding-right: .7rem;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: #fff;
+/* Header Styles */
+.main-nav {
+  background: #010101;
 }
 
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: red;
-}
-
-/*--- Home CSS ---*/
-
-.landing {
-  position: relative;
-  width: 100%;
+.header-image {
   height: 100vh;
-  display: table;
-  z-index: -1;
+  min-height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/ilya-pavlov-87438-unsplash.jpg') center/cover no-repeat fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.home-wrapper {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.home-inner {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/ilya-pavlov-87438-unsplash.jpg');
-  position: fixed;
-  display: table;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-}
-
-.landing-text {
-  width: 100%;
-  max-width: 100%;
-  position: absolute;
-  top: 38%;
+.header-text {
   color: #fff;
-  z-index: 1;
 }
 
-.landing-text h1 {
+.header-text h1 {
   font-size: 3.8rem;
   font-weight: 700;
   letter-spacing: .3rem;
@@ -111,165 +53,92 @@ body {
   padding-bottom: 1rem;
 }
 
-.landing-text h3 {
+.header-text h3 {
   font-size: 2rem;
   text-shadow: .1rem .1rem .5rem #000000;
   padding-bottom: 1.6rem;
 }
 
-/*--- About CSS ---*/
-
-.narrow {
-  width: 75%;
-  margin: 1.5rem auto;
-  padding-top: 2rem;
+.header-text-container {
+  z-index: 1;
 }
 
-.fixed-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -999!important;
+.header-button {
+  margin-top: 75px;
 }
 
-.contact-fixed-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -999!important;
+/* About Page Styles */
+.about-me {
+  margin-bottom: 25px;
 }
 
-
-.fixed {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('images/safar-safarov-1509070-unsplash.jpg');
-  z-index: -1;
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  will-change: transform;
+.skill-icons {
+  height: 10em;
+  width: 10em;
+  margin: 30px auto;
 }
 
-.skill i.fab {
-  color: red;
-  padding-bottom: 1rem;
+/* Portfolio Page Styles */
+.card-button {
+  margin-bottom: 25px;
 }
 
-.skillHeading {
-  color: #fff;
+.card-footer,
+.modal-footer {
+  background: #010101;
 }
 
-.skill-tech-heading {
-  font-size: 1.3rem;
-  font-weight: 700;
-  padding-bottom: .4rem;
-  padding-top: .4rem;
-  color: #fff;
+.portfolio-page-p {
+  margin: 50px auto 25px;
 }
 
-.skill-lead {
-  font-size: 1.1rem;
-  padding-bottom: 1.5rem;
-  color: #fff;
-}
-
-.fixed-background {
-  position: relative;
-  width: 100%;
-}
-
-.contact-area {
-  width: 100%;
-  height: 600px;
-  background-color: grey;
-}
-
-.contact-area-container {
-  padding-top: 80px;
-}
-
-.social-icons-heading {
-  font-size: 1.8rem;
-  font-weight: 700;
-  padding-bottom: .4rem;
-  padding-top: .4rem;
-}
-
+/* Contact Page Styles */
 .social-icons {
-  margin: 50px auto;
+  height: 10em;
+  width: 10em;
+  margin: 25px auto
 }
 
-.social-icon-link {
-  color: red;
-}
-
-.social-icon-link:hover {
-  color: #343a40;
-}
-
+/* Footer Styles */
 .footer {
-  background-color: #343a40;
-  height: 100px;
-  width: 100%;
-}
-
-.footer-text {
-  text-align: center;
-  margin: 35px auto;
+  background: #010101;
   color: white;
+  padding: 30px 0;
 }
 
-/*--- Media Queries ---*/
-
-@media (min-width: 320px) {
-  .contact-area {
-    height: 950px;
-  }
-
-  .contact-area-container {
-    padding-top: 40px;
-  }
+.footer p {
+  margin-bottom: 0;
 }
 
-@media (min-width: 768px) {
-  .contact-area {
-    height: 600px;
-  }
+/* Media Queries */
 
-  .contact-area-container {
-    padding-top: 80px;
-  }
-}
-
-
-
-/*============ BOOTSTRAP BREAK POINTS:
-
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+// Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
+// Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
+// Large devices (desktops, 992px and up)
 @media (min-width: 992px) { ... }
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
 
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+@media (max-width: 992px) {
+  .header-image {
+    background-attachment: scroll;
+  }
 
-=============*/
+  .header-text h1 {
+    /* font-size: 3.8rem; */
+    font-size: 3.5rem;
+  }
+
+  .header-text h3 {
+    /* font-size: 2rem; */
+    font-size: 2rem;
+  }
+
+  .social-header {
+    margin-top: 50px;
+  }
+}

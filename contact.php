@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Dominique The Developer | Home</title>
+  <title>Dominique The Developer | Contact</title>
 </head>
 
 <body class="d-flex flex-column">
@@ -35,7 +35,7 @@
                 <a class="nav-link" href="portfolio.php">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.php">Contact</a>
+                <a class="nav-link active" href="contact.php">Contact</a>
               </li>
             </ul>
           </div>
@@ -47,11 +47,8 @@
       <div class="container h-100 header-text-container">
         <div class="row h-100 align-items-center">
           <div class="col-12 text-center header-text">
-            <h1 class="animated bounceInLeft delay-1s">Hello, my name is Dominique.</h1>
-            <h3 class="animated bounceInRight delay-2s">Freelance Web Developer</h3>
-            <div class="header-button animated bounceInUp delay-3s">
-              <a href="about.php" class="btn btn-lg btn-outline-light" role="button">Let's Work!</a>
-            </div>
+            <h1 class="animated bounceInLeft delay-1s">Ready to work?</h1>
+            <h3 class="animated bounceInRight delay-2s">Let's get in touch.</h3>
           </div>
         </div>
       </div>
@@ -60,6 +57,71 @@
   </section>
 
   <!-- Header Section End -->
+
+  <!-- Contact Section Start -->
+
+  <main>
+    <section>
+
+      <div class="container section">
+
+        <div class="row">
+
+          <div class="col-sm text-center">
+            <h3>Message Me</h3>
+
+
+
+            <form id="contact-form" class="needs-validation" action="mail.php" method="post" novalidate>
+              <div class="form-group">
+                <label for="email"></label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
+                <div class="invalid-feedback"> Please enter a valid email address.</div>
+              </div>
+              <div class="form-group">
+                <label for="name"></label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+                <div class="invalid-feedback"> Please enter your name.</div>
+              </div>
+              <div class="form-group">
+                <label for="subject"></label>
+                <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" required>
+                <div class="invalid-feedback"> Please enter a subject for your message.</div>
+              </div>
+              <div class="form-group">
+                <label for="message"></label>
+                <textarea name="message" class="form-control" id="message" placeholder="Message" rows="8" cols="80" required></textarea>
+                <div class="invalid-feedback"> Please enter your message.</div>
+              </div>
+
+              <?php
+             $statusMsg = !empty($_SESSION['msg'])?$_SESSION['msg']:'';
+             unset($_SESSION['msg']);
+             echo $statusMsg;
+             ?>
+
+              <button type="submit" class="btn btn-dark" name="button">Submit</button>
+            </form>
+          </div>
+
+          <div class="col-sm text-center">
+            <h3 class="social-header">Follow Me</h3>
+            <div class="social">
+              <a href="https://github.com/ddmoody"><img class="social-icons" src="images/github.svg" alt="Github"></a>
+            </div>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/dominique-moody-645908113/"><img class="social-icons" src="images/linkedin.svg" alt="LinkedIn"></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Contact Section End -->
 
   <!-- Footer Start -->
 

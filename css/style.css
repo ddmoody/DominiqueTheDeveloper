@@ -1,11 +1,19 @@
 /* Global Styles */
 
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background: #e4e4e4;
   position: relative;
-  overflow-x: hidden;
   min-height: 100vh;
+  min-width: 100vw;
   font-size: 16px;
   line-height: 1.8em;
 }
@@ -129,16 +137,24 @@ body {
   }
 
   .header-text h1 {
-    /* font-size: 3.8rem; */
     font-size: 3.5rem;
   }
 
   .header-text h3 {
-    /* font-size: 2rem; */
     font-size: 2rem;
   }
 
   .social-header {
     margin-top: 50px;
+  }
+}
+
+@media (max-width: 992px) and (orientation: landscape) {
+  .header-text-container {
+    margin-top: 60px;
+  }
+
+  .header-button {
+    margin: 25px auto 56px;
   }
 }
